@@ -233,7 +233,7 @@ function App() {
                 type="text" inputMode="decimal"
                 value={valorUR} 
                 onChange={e => setLocalValorUR(e.target.value.replace(',', '.'))} 
-                placeholder="Ej: 366.92"
+                placeholder={`Ej: ${data.config?.valorUR || 366.92}`}
               />
             </div>
             <div className="form-group">

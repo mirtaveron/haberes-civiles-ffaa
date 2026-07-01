@@ -18,6 +18,22 @@ export default function AdminTab({ data, isAdmin, handleAdminLoginClick, handleU
         Las modificaciones aquí se guardarán en la base de datos y afectarán la calculadora.
       </p>
 
+      <h3>0. Configuración General</h3>
+      <div className="table-container" style={{marginBottom: '2rem', padding: '1.5rem', background: 'var(--bg-color)', border: '1px solid var(--input-border)', borderRadius: '8px'}}>
+        <div className="form-group" style={{maxWidth: '350px', margin: 0}}>
+          <label>Valor de Referencia U.R.</label>
+          <input 
+            type="number" 
+            defaultValue={data.config && data.config['valorUR']} 
+            disabled={!isAdmin}
+            onBlur={(e) => handleUpdate('configuracion', 'key', 'valorUR', 'value', e.target.value)} 
+          />
+          <small style={{display: 'block', marginTop: '0.5rem', color: 'var(--text-light)', fontSize: '0.8rem'}}>
+            Este es el valor sugerido que aparece en la calculadora.
+          </small>
+        </div>
+      </div>
+
       <h3>1. Asignación Básica (Sueldo / Dedicación)</h3>
       <div className="table-container">
         <table>
