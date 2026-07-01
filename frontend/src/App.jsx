@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Calculator, Database, Save, RefreshCw, Trash2, DollarSign, Heart } from 'lucide-react';
+import { Calculator, Database, Save, RefreshCw, Trash2, DollarSign, Coffee } from 'lucide-react';
 import AdminTab from './components/AdminTab';
 import ReceiptTable from './components/ReceiptTable';
 import './index.css';
@@ -505,13 +505,13 @@ function App() {
           Contacto, sugerencias o reporte de errores: <a href="mailto:portus.solutions@gmail.com" style={{color: 'var(--primary)', textDecoration: 'none'}}>portus.solutions@gmail.com</a>
         </div>
         <div style={{marginTop: '1.5rem'}}>
-          <a href="https://patreon.com/portussolutions" target="_blank" rel="noopener noreferrer" style={{
+          <a href="https://cafecito.app/portussolutions" target="_blank" rel="noopener noreferrer" style={{
             display: 'inline-flex', alignItems: 'center', gap: '0.5rem', 
-            background: '#FF424D', color: 'white', padding: '0.5rem 1.25rem', 
+            background: '#1E90FF', color: 'white', padding: '0.5rem 1.25rem', 
             borderRadius: '999px', textDecoration: 'none', fontWeight: 'bold',
-            boxShadow: '0 4px 6px rgba(255, 66, 77, 0.2)', transition: 'transform 0.2s'
+            boxShadow: '0 4px 6px rgba(30, 144, 255, 0.2)', transition: 'transform 0.2s'
           }}>
-            <Heart size={16} fill="white" /> Apoyar el proyecto en Patreon
+            <Coffee size={16} color="white" strokeWidth={3} /> Invitame un Cafecito
           </a>
         </div>
       </footer>
