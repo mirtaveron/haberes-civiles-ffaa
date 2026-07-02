@@ -48,9 +48,9 @@ function App() {
     fetchData();
   }, []);
 
-  const fetchData = async () => {
+  const fetchData = async (silent = false) => {
     try {
-      setLoading(true);
+      if (!silent) setLoading(true);
       const res = await axios.get(`${API_URL}/data`);
       // Parse data into easy lookup objects
       const db = {
@@ -72,7 +72,7 @@ function App() {
       if(res.data.complemento) res.data.complemento.forEach(c => db.complemento[c.nivel] = c);
 
       setData(db);
-      setLoading(false);
+      if (!silent) setLoading(false);
     } catch (err) {
       console.error("Error fetching data:", err);
       alert("No se pudo conectar con la base de datos local. ¿Está el backend corriendo?");
@@ -84,7 +84,7 @@ function App() {
       await axios.post(`${API_URL}/update`, {
         table, keyField, key, field, value: parseFloat(value)
       });
-      fetchData(); // Reload all data
+      fetchData(true); // Reload all data silently
     } catch (err) {
       alert("Error al actualizar la base de datos.");
     }
