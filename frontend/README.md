@@ -1,16 +1,33 @@
-# React + Vite
+# Simulador de Haberes - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Esta carpeta contiene la aplicación web desarrollada con **React** y construida con **Vite**.
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologías
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React.js**: Biblioteca principal de interfaces.
+- **Vite**: Herramienta de compilación ultrarrápida.
+- **Axios**: Cliente HTTP para comunicarse con el Backend.
+- **Lucide-React**: Biblioteca de íconos SVG de alta calidad.
+- **CSS3 Nativo**: Estilos personalizados con variables CSS.
 
-## React Compiler
+## ⚙️ Configuración (Variables de Entorno)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Crea un archivo `.env` tomando como guía `.env.example`:
+```
+VITE_API_URL=http://localhost:3001/api
+```
+*(En Vercel, esta variable apunta a la URL pública del backend en Render).*
 
-## Expanding the Oxlint configuration
+## 🏃‍♂️ Desarrollo Local
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Para correr la interfaz de usuario en tu computadora:
+
+1. Instalar dependencias:
+   ```bash
+   npm install
+   ```
+2. Iniciar el servidor de desarrollo (con recarga en caliente):
+   ```bash
+   npm run dev
+   ```
+3. Abre el navegador en `http://localhost:5173` (o el puerto que te indique Vite).
