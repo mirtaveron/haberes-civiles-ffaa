@@ -19,7 +19,9 @@ DATABASE_URL=postgresql://usuario:password@host/neondb?sslmode=require
 
 ## 🗄️ Base de Datos Automática
 
-El servidor cuenta con una función de inicialización (`initDb`) que se ejecuta cada vez que arranca. Si las tablas no existen, las crea automáticamente (`CREATE TABLE IF NOT EXISTS`) e inserta los valores base. **No es necesario inicializar la base de datos de forma manual.**
+El servidor cuenta con una función de inicialización que lee el archivo `init.sql` y lo ejecuta cada vez que arranca. Si las tablas no existen, las crea automáticamente (`CREATE TABLE IF NOT EXISTS`) e inserta los valores base. **No es necesario inicializar la base de datos de forma manual.** 
+
+*(Si como desarrollador deseas modificar la estructura de las tablas o los valores por defecto "de fábrica", simplemente edita el archivo `init.sql`).*
 
 ### Usar una Base de Datos Local (Opcional)
 
