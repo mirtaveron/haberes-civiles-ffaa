@@ -270,7 +270,7 @@ function App() {
               <label>Grado</label>
               <select value={grado} onChange={e => setGrado(e.target.value)} disabled={!nivel}>
                 <option value="">-- Grado --</option>
-                {[...Array(11).keys()].map(i => (
+                {[...Array(16).keys()].map(i => (
                   <option key={i} value={i}>{i === 0 ? '0 (Inicial)' : i}</option>
                 ))}
               </select>

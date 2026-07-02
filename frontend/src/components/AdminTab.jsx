@@ -72,14 +72,14 @@ export default function AdminTab({ data, isAdmin, handleAdminLoginClick, handleU
           <thead>
             <tr>
               <th>Nivel</th>
-              <th>G1</th><th>G2</th><th>G3</th><th>G4</th><th>G5</th><th>G6</th><th>G7</th><th>G8</th><th>G9</th><th>G10</th>
+              <th>G1</th><th>G2</th><th>G3</th><th>G4</th><th>G5</th><th>G6</th><th>G7</th><th>G8</th><th>G9</th><th>G10</th><th>G11</th><th>G12</th><th>G13</th><th>G14</th><th>G15</th>
             </tr>
           </thead>
           <tbody>
             {Object.values(data.grados).map(row => (
               <tr key={row.nivel}>
                 <td><strong>{row.nivel}</strong></td>
-                {[1,2,3,4,5,6,7,8,9,10].map(g => (
+                {[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15].map(g => (
                   <td key={g}>
                     <input type="number" defaultValue={row[`g${g}`]} style={{width: '60px'}} disabled={!isAdmin}
                            onBlur={(e) => handleUpdate('grados', 'nivel', row.nivel, `g${g}`, e.target.value)} />
