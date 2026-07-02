@@ -233,8 +233,10 @@ function App() {
                 type="text" inputMode="decimal"
                 value={valorUR} 
                 onChange={e => setLocalValorUR(e.target.value.replace(',', '.'))} 
-                placeholder={`Ej: ${data.config?.valorUR || 366.92}`}
               />
+              <small style={{display: 'block', marginTop: '0.25rem', color: 'var(--text-light)', fontSize: '0.8rem'}}>
+                Sugerido: {data.config?.valorUR || 366.92}
+              </small>
             </div>
             <div className="form-group">
               <label>Agrupamiento</label>
