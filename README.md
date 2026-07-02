@@ -1,6 +1,6 @@
-# Simulador de Haberes - PECIFA
+# Simulador de Haberes  
 
-Este proyecto es una herramienta web interactiva diseñada para calcular y simular las liquidaciones salariales (haberes) del personal civil de las Fuerzas Armadas. 
+Este proyecto es una herramienta web interactiva diseñada para calcular y simular las liquidaciones salariales (haberes) del **personal civil de las Fuerzas Armadas**. 
 
 Permite modificar parámetros dinámicos (nivel escalafonario, grado, tramo, suplementos) y visualiza de manera instantánea el impacto en el sueldo bruto, descuentos oficiales (Jubilación, Obra Social, Seguros) y el salario neto final. Cuenta con un panel de administración para actualizar las tablas base de forma centralizada en una base de datos PostgreSQL.
 
@@ -20,3 +20,11 @@ El repositorio está configurado para un despliegue continuo (Continuous Deploym
 ---
 
 *(Para más detalles técnicos sobre cómo ejecutar o configurar el servidor y la interfaz, consulta los archivos `README.md` dentro de las carpetas `frontend` y `backend`).*
+
+## 📄 Licencia
+
+Este proyecto es de código abierto y está disponible para fines educativos.
+
+---
+
+¿Preguntas o problemas? Crea un *issue* en el repositorio o contacta al autor.
