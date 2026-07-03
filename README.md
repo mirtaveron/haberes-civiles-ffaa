@@ -1,5 +1,7 @@
 # Simulador de Haberes  
 
+🌍 **Versión en Vivo:** [https://haberes-civiles-ffaa.vercel.app/](https://haberes-civiles-ffaa.vercel.app/)
+
 Este proyecto es una herramienta web interactiva diseñada para calcular y simular las liquidaciones salariales (haberes) del **personal civil de las Fuerzas Armadas**. 
 
 Permite modificar parámetros dinámicos (nivel escalafonario, grado, tramo, suplementos) y visualiza de manera instantánea el impacto en el sueldo bruto, descuentos oficiales (Jubilación, Obra Social, Seguros) y el salario neto final. Cuenta con un panel de administración para actualizar las tablas base de forma centralizada en una base de datos PostgreSQL.
