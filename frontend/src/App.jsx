@@ -497,17 +497,17 @@ function App() {
         fontSize: '0.85rem'
       }}>
         <div style={{marginBottom: '0.5rem', fontWeight: 'bold', color: 'var(--text-dark)'}}>
-          Portus Solutions © {new Date().getFullYear()}
+          Lingova © {new Date().getFullYear()}
         </div>
         <p style={{margin: '0.25rem 0', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto'}}>
           Esta herramienta ha sido desarrollada con fines estimativos y de simulación. 
           Los montos finales pueden variar según liquidaciones oficiales u otros descuentos particulares no contemplados.
         </p>
         <div style={{marginTop: '1rem'}}>
-          Contacto, sugerencias o reporte de errores: <a href="mailto:portus.solutions@gmail.com" style={{color: 'var(--primary)', textDecoration: 'none'}}>portus.solutions@gmail.com</a>
+          Contacto, sugerencias o reporte de errores: <a href="mailto:hello@lingova.com.ar" style={{color: 'var(--primary)', textDecoration: 'none'}}>hello@lingova.com.ar</a>
         </div>
         <div style={{marginTop: '1.5rem'}}>
-          <a href="https://cafecito.app/portussolutions" target="_blank" rel="noopener noreferrer" style={{
+          <a href="https://cafecito.app/lingova" target="_blank" rel="noopener noreferrer" style={{
             display: 'inline-flex', alignItems: 'center', gap: '0.5rem', 
             background: '#1E90FF', color: 'white', padding: '0.5rem 1.25rem', 
             borderRadius: '999px', textDecoration: 'none', fontWeight: 'bold',
